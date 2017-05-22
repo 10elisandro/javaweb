@@ -32,6 +32,7 @@ public abstract class PortalServlet extends HttpServlet {
 	}
 
 	public static void trataRetornoErroCritico(HttpServletResponse response, Exception e) throws IOException {
+		e.printStackTrace();
 		trataRetorno(response, "Erro crítico no sistema: " + e.getMessage());
 	}
 
