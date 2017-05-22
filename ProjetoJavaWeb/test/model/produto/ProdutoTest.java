@@ -1,4 +1,4 @@
-package testes;
+package model.produto;
 
 import static org.junit.Assert.*;
 import model.produto.Produto;
