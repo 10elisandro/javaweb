@@ -40,20 +40,13 @@ public abstract class PortalServlet extends HttpServlet {
 		response.setContentType("text/html; charset=iso-8859-1;");
 
 		PrintWriter out = response.getWriter();
-		out.println("<html>");
-		out.println("<head>");
-		out.println("<title>Projeto Java Web</title>");
-		out.println("</head>");
-		out.println("<body>");
+		out.println("<html><head><title>Projeto Java Web</title></head><body>");
 		if (msgErro == null) {
 			out.println("<h4>Operação efetuada com sucesso!</h4>");
 		} else {
-			out.println("<h4>" + msgErro + "</h4>");
-			out.println("<a href='javascript:window.history.go(-1)'><input type='button' value='Voltar'></a>");
+			out.println("<h4>" + msgErro + "</h4><a href='javascript:window.history.go(-1)'><input type='button' value='Voltar'></a>");
 		}
-		out.println("<a href='index.jsp'><input type='button' value='Tela Inicial'></a>");
-		out.println("</body>");
-		out.println("</html>");
+		out.println("<a href='index.jsp'><input type='button' value='Tela Inicial'></a></body></html>");
 		out.close();	
 	}
 }
